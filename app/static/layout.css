@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #009CB9;
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+}
+
+header {
+    background-color: #000000;
+    width: 100%;
+    margin: auto;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+    display: flex;
+}
+
+header h1 {
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+}
+
+section.wrapper {
+    padding-top: 90px;
+}
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 20px;
+    z-index: 1;
+    position: fixed;
+}
+
+footer section {
+    width: 80%;
+    margin: auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: #009CB9;
+}
+
+#sidebar {
+    height: calc(100vh - 185px);
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    background-color: #009CB9;
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin: 90px 0 95px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar .closebtn {
+    position: absolute;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #000000;
+    text-decoration: none;
+}
+
+#sidebar h1 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 15px 50px 15px 15px;
+}
+
+#sidebar .container {
+    height: 100%;
+    padding: 15px;
+    overflow: auto;
+}
+
+#sidebar .container div {
+    background-color: #ffffff;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#sidebar .container div p {
+    text-align: right;
+    font-style: italic;
+}
+
+#sidebar .container .button {
+    float: right;
+}
+
+#map-canvas {
+    height: calc(100vh - 185px);
+    width: 100%;
+    margin: 0px;
+    padding: 0px
+}
+
+#inputModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+#inputModal .content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+#inputModal .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#inputModal label, input, textarea {
+    display: block;
+    width: calc(100% - 10px);
+    margin-bottom:10px;
+}
+
+#inputModal input {
+    height: 25px;
+    border: 1px solid #212121;
+    padding: 0 5px;
+}
+
+#inputModal textarea {
+    border: 1px solid #212121;
+    height: 100px;
+    padding: 5px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 0px 10px;
+    cursor: pointer;
+}
