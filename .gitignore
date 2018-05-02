@@ -1,0 +1,29 @@
+# list of the files and directorues to be ignored by git
+# Author: hharutyunyan
+# Version: 1.0
+
+
+# log files
+*.log
+
+# python byte-compiled files and cache
+*.py[cod]
+*$py.class
+__pycache__/
+
+# text editor generated files
+*~
+*#
+*.sw[po]
+
+# backup files
+*.bak
+
+# macOS's .DS_store
+.DS_store
+
+venv/
+
+\.idea/
+
+var/
