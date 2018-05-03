@@ -89,7 +89,8 @@ class db(object):
         """Perform an insert query."""
         query = self.__insert % (
             table, ", ".join(str(v) for v in values.keys()),
-            ", ".join(str("'" + v + "'") for v in values.values())
+            ", ".join(str("'" + v.encode('utf-8') + "'")
+                      for v in values.values())
         )
         if returning:
             query += " RETURNING %s" % returning
