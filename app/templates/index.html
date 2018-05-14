@@ -17,12 +17,12 @@
         </a>
         <h1></h1>
         <div class="container" id="storyContainer">
-            <a href="#" class="button" id="addButton">Add a Story</a>
+            <a href="#" class="button" id="addButton">Ավելացնել պատմություն</a>
         </div>
     </section>
 
     <header>
-        <h1>Մի շենքի պատմություն</h1>
+        <h1>Մի Շենքի Պատմություն</h1>
     </header>
 
     <section class="wrapper">
@@ -32,24 +32,37 @@
     <div id="inputModal">
         <form class="content" id="inputForm">
             <span class="close">&times;</span>
-            <label for="story">Your story</label>
+            <label for="story">Ձեր պատմությունը</label>
             <textarea id="story" name="story"></textarea>
             <br />
-            <label for="author">Author</label>
+            <label for="author">Հեղինակ</label>
             <input type="text" id="author" />
             <br />
-            <a href="#" class="button" id="addStoryButton">Add the Story</a>
+            <a href="#" class="button" id="addStoryButton">Ավելացնել պատմությունը</a>
         </form>
     </div>
+
+    <dov id="infoModal">
+        <div class="content">
+            <a href="javascript:void(0)" class="close" onclick="closeInfo()">
+                &times;
+            </a>
+            Կայքը ստեցծվել է Երևանի շենքերի պատմությունների շտեմարան հավաքագրելու նպատակով։<br />
+            Օգտագտվելու համար սեղմեք Ձեզ հետաքրքրող շենքի վրա և տեսեք առկա պատմությունները։
+            Ձեր պատմությունը ավելացնելու համար սեղմեք «Ավելացնել պատմություն» կոճակը։
+        </div>
+    </dov>
 
     <footer>
         <section>
 
-            Copyright © 2018 hharutyunyan
+            Հեղինակային իրավունք © 2018 <a href="http://github.com/hharutyunyan">hharutyunyan</a>, Նարեկ Կարապետյան
 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-            Developed by <a href="https://linkedin.com/in/henryharutyunyan/" target="_blank">hharutyunyan</a>
+            <a href="javascript:void(0)" onclick="openInfo()">
+                Օգտագործման կարգը
+            </a>
 
         </section>
     </footer>

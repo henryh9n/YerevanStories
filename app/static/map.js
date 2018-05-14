@@ -279,6 +279,14 @@ function closeBar() {
     document.getElementById('sidebar').style.width = '0'
 }
 
+function openInfo() {
+    document.getElementById('infoModal').style.display = "block"
+}
+
+function closeInfo() {
+    document.getElementById('infoModal').style.display = "none"
+}
+
 var modal = document.getElementById('inputModal')
 var btn = document.getElementById("addButton")
 
